@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cc{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:1000px;
+    background:transparent url("https://api.xygeng.cn/bing/1920.php") no-repeat 100% 100%;
+    filter:blur(2px);
+    z-index:-1;
+    background-size:cover;
+}
+.cc::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:1000px;
+    background:transparent url("https://api.xygeng.cn/bing/1920.php") no-repeat 100% 100%;
+    filter:blur(40px);
+    z-index:-1;
+    background-size:cover;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    background-color: #050505;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    opacity: 0.9;
+}
+.navbar-left{
+    position: absolute;
+    left: 40px;
+    width: 400px;
+    height: 40px;
+}
+.navbar-left-li li a:hover{
+    border-bottom: 3px solid white;
+}
+.navbar-left-li ul li a{
+    display: block;
+    margin-left: 10px;
+    float: left;
+    color: white;
+    font-size: 12px;
+
+}
+.navbar-left-li ul{
+    height: 40px;
+    line-height: 40px;
+}
+.navbar-right{
+    float: right;
+    height: 40px;
+    width: 300px;
+    line-height: 40px;
+}
+.navbar-right a:hover{
+    border-bottom: 3px solid white;
+}
+.navbar-right a{
+    display: block;
+    float: left;
+    color: white;
+    font-size: 12px;
+}
+.medium{
+    position: absolute;
+    width: 1200px;
+    height: 1000px;
+    top:40px;
+    left: 13%;
+    opacity: 0.8;
+
+}
+/*.medium-logo{*/
+    /*text-align: center;*/
+/*}*/
+.medium-logo {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top:10%;
+    left: 30%;
+    text-align: center;
+    line-height: 300px;
+
+}
+.medium-logo a{
+    color: white;
+    font: 40px/1.5 tahoma,arial,"Hiragino Sans GB",宋体,sans-serif;
+    font-style:oblique;
+}
+.medium-zj{
+    position: absolute;
+    width: 600px;
+    height: 60px;
+    top:25%;
+    left: 27%;
+    background-color: #050505;
+    border-radius: 8px;
+}
+.medium-zj-search input{
+    float: left;
+    width: 280px;
+    height: 60px;
+    border: 0;
+    color: #989898;
+    padding: 0 0 0 5px;
+    background-color:#050505 ;
+    outline: none;
+}
+.medium-zj-search button{
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 0 15px 0 15px;
+    border: 0;
+    height: 55px;
+    background-color:#050505 ;
+}
+.medium-zj-search i:hover{
+    color: #00a1d6;
+}
+.medium-zj-search i{
+    font-style: normal;
+    color: white;
+    font-family: 'icomoon';
+    font-size: 28px;
+}
+.medium-zj-menu{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 1000px;
+    height: 80px;
+    background-color: black;
+}
+.medium-zj-menu a{
+    color: white;
+    font-size: 16px;
+}
+.medium-zj-menu ul{
+    height: 80px;
+    line-height: 80px;
+    border: 0;
+}
+.medium-zj-menu ul li{
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+    border: 0;
+}
+.menu{
+    border: 1px solid #00a1d6;
+}
+.medium-zj-video{
+    position: absolute;
+    background: #050505;
+    width: 1045px;
+    height: 280px;
+    left: 3%;
+    bottom: 10%;
+    padding: 10px;
+}
+.medium-zj-video-left{
+    float: left;
+    margin-top: 26px;
+    margin-left: 20px;
+}
+.medium-zj-video-right{
+    right: 5%;
+    position: absolute;
+    margin-top: 40px;
+}
+.medium-zj-video-right-top{
+    margin-top:-20px;
+}
+.medium-zj-video-right-bottom{
+    margin-top: 20px;
+}

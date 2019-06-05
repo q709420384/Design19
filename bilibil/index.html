@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>啾咪啾咪</title>
+    <meta name="description" content="啾咪啾咪是国内不知名的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围，最有创意的Up主。大家可以在这里找到许多欢乐。">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="bg" id="bd">
+<script src="js/index.js"></script>
+<script src="js/jquery-1.12.1.min.js"></script>
+<!--导航栏开始-->
+<div class="navbar">
+    <div class="navbar-left">
+        <div class="navbar-left-li">
+            <ul>
+                <li><a href="#"><span class="icon-tv">&nbsp;</span>主站</a></li>
+                <li><a href="#">音频</a></li>
+                <li><a href="#">游戏中心</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">我的会员</a></li>
+                <li><a href="#">我的会员</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="navbar-right">
+        <ul>
+            <li>
+                <a href="#">
+                    您还未登录，请登录
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航栏结束-->
+<!--中间部分开始-->
+<div class="medium">
+    <div class="medium-logo">
+        <a href="#"><h1  id="logo">啾咪啾咪</h1></a>
+    </div>
+    <div class="medium-zj">
+        <div class="medium-zj-search">
+            <form method="post">
+                <button class="fl">
+                    <i></i>
+                </button>
+                <input type="text" id="search" name="search" value="请输入你要搜索的番剧、up主" >
+                <button class="fr">
+                    <i></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="medium-zj-menu" id="menu">
+        <ul>
+            <li><a>首页</a></li>
+            <li><a>动画</a></li>
+            <li><a>番剧</a></li>
+            <li><a>原创</a></li>
+            <li><a>音乐</a></li>
+            <li><a>舞蹈</a></li>
+            <li><a>游戏</a></li>
+            <li><a>音乐</a></li>
+            <li><a>舞蹈</a></li>
+            <li><a>游戏</a></li>
+            <li><a>游戏</a></li>
+        </ul>
+    </div>
+    <div class="medium-zj-video">
+        <div class="medium-zj-video-left"><a href="#"> <img src="image/c445f755dd6ac819bb6648731fa7eefd.jpg@880w_440h.jpg" height="220px" width="440px"></a>
+        </div>
+        <div class="medium-zj-video-right">
+            <div class="medium-zj-video-right-top">
+                <a href="#"><img src="image/x1.jpg"></a>
+                &nbsp;
+                <a href="#"><img src="image/x2.jpg"></a>
+                &nbsp;
+                <a href="#"><img src="image/x3.jpg"></a>
+                &nbsp;
+            </div>
+            <div class="medium-zj-video-right-bottom">
+                <a href="#"><img src="image/x4.jpg"></a>
+                &nbsp;
+                <a href="#"><img src="image/x5.jpg"></a>
+                &nbsp;
+                <a href="#"><img src="image/x6.jpg" height="100"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    my("search").onfocus=function () {
+        this.value="";
+        this.style.color="white";
+        $("#bd").removeClass('bg').addClass('cc');
+    }
+    my("search").onblur=function () {
+        this.value="请输入你要搜索的番剧、up主";
+        this.style.color="#989898";
+        $("#bd").removeClass('cc').addClass('bg');
+    }
+    $('#logo').mouseover(function () {
+        $('#logo').addClass('animated jello');}
+        )
+    $('#logo').mouseout(function () {
+        $('#logo').removeClass('jello');}
+    )
+    $('#menu').mouseover(function () {
+        $('#menu').addClass('menu');}
+    )
+    $('#menu').mouseout(function () {
+        $('#menu').removeClass('menu');}
+    )
+</script>
+</body>
+</html>
